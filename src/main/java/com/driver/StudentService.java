@@ -27,8 +27,8 @@ public class StudentService {
     }
 
     //3
-    public ResponseEntity<String> addStudentTeacherPair(String studentName, String teacherName){
-        return addStudentTeacherPair(studentName, teacherName);
+    public ResponseEntity<String> addStudentTeacherPair(String student, String teacher){
+        return studentRepository.addStudentTeacherPair(student, teacher);
     }
 
     //4

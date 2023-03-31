@@ -54,7 +54,7 @@ public class StudentRepository {
 
     //4
     public ResponseEntity<Student> getStudentByName(String studentName){
-        Student student = studentMap.getOrDefault(studentMap, null);
+        Student student = studentMap.getOrDefault(studentName, null);
 
         return new ResponseEntity<>(student, HttpStatus.FOUND);
     }
